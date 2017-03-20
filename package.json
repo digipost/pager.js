@@ -1,0 +1,19 @@
+{
+  "name": "pager.js",
+  "author": "Olav Bjørkøy",
+  "version": "1.3.0",
+  "description": "Pager.js runs JavaScript functions based on the current path name. This is useful if you have a traditional website and you want to run specific JS on each page, but still include all JS files on all pages.",
+  "main": "pager.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digipost/pager.js.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digipost/pager.js/issues"
+  },
+  "homepage": "https://github.com/digipost/pager.js#readme"
+}
