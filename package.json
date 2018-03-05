@@ -1,11 +1,13 @@
 {
-  "name": "pager.js",
+  "name": "@digipost/pager.js",
   "author": "Olav Bjørkøy",
   "version": "1.3.0",
   "description": "Pager.js runs JavaScript functions based on the current path name. This is useful if you have a traditional website and you want to run specific JS on each page, but still include all JS files on all pages.",
   "main": "pager.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "npm run verify:not-published",
+    "verify:not-published": "! npm show . versions -s --json | grep -q \\\"${npm_package_version}\\\"",
+    "test": "karma start --single-run"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/digipost/pager.js/issues"
   },
-  "homepage": "https://github.com/digipost/pager.js#readme"
+  "homepage": "https://github.com/digipost/pager.js#readme",
+  "publishConfig": {
+    "registry": "https://repo3.dgp.st/repository/npm-private/"
+  },
+  "devDependencies": {
+    "karma": "2.0.0",
+    "karma-mocha": "1.3.0",
+    "karma-phantomjs-launcher": "1.0.4",
+    "mocha": "5.0.1"
+  }
 }
